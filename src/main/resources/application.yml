@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Application
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: group_id
+      auto-offset-reset: earliest
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    template:
+      default-topic: test-topic
