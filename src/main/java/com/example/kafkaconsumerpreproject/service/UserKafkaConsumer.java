@@ -9,5 +9,6 @@ public class UserKafkaConsumer {
     @KafkaListener(topics = "test_topic")
     public void consumeUser(User user) {
         System.out.println("User - " + user);
+
     }
 }
